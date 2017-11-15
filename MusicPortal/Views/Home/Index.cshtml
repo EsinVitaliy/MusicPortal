@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @if (ViewBag.DatabaseConnectionError)
+    {
+        <div style="color: red; font-weight: bold;">
+            Отсутствует связь с базой данных!
+        </div>
+        <br>
+    }
+
+<div>
+    <a href="../api/users">Список пользователей (../api/users)</a>
+    <br>
+    <a href="../api/users/1">Конкретный пользователь (../api/users/1)</a>
+    <br>
+    <br>
+    <a href="../api/albums">Список альбомов (../api/albums)</a>
+    <br>
+    <a href="../api/albums/1">Конкретный альбом (../api/albums/1)</a>
+    <br>
+    <a href="../api/albums/user/2">Альбомы конкретного пользователя (../api/albums/user/2)</a>
+    <br>
+    <br>
+    <a href="../api/jsonplaceholder">Данные с JsonPlaceholder (../api/jsonplaceholder)</a>
+</div>
+</body>
+</html>
